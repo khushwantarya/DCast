@@ -1,0 +1,523 @@
+2011-11-25 04:09:41 Warning: Warning (2): htmlentities() [<a href='http://php.net/function.htmlentities'>function.htmlentities</a>]: charset `true' not supported, assuming iso-8859-1 in [E:\wamp\www\website\discoverycast\cake\libs\view\helpers\html.php, line 298]
+2011-11-25 05:43:42 Warning: Warning (2): mysql_connect() [<a href='http://php.net/function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on 'testdiscoverycastcom.ipagemysql.com' (10061) in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 552]
+2011-11-25 05:43:42 Warning: Warning (2): mysql_select_db(): supplied argument is not a valid MySQL-Link resource in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 558]
+2011-11-25 05:43:42 Warning: Warning (2): mysql_query(): supplied argument is not a valid MySQL-Link resource in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 600]
+2011-11-25 05:43:42 Warning: Warning (2): mysql_get_server_info(): supplied argument is not a valid MySQL-Link resource in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 566]
+2011-11-25 05:43:42 Warning: Warning (2): mysql_errno(): supplied argument is not a valid MySQL-Link resource in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 682]
+2011-11-25 05:43:42 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 127]
+2011-11-25 05:43:42 Warning: Warning (2): array_keys() [<a href='http://php.net/function.array-keys'>function.array-keys</a>]: The first argument should be an array in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 1953]
+2011-11-25 05:43:42 Warning: Warning (2): array_keys() [<a href='http://php.net/function.array-keys'>function.array-keys</a>]: The first argument should be an array in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 1966]
+2011-11-25 05:43:42 Warning: Warning (2): array_filter() [<a href='http://php.net/function.array-filter'>function.array-filter</a>]: The first argument should be an array in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 1970]
+2011-11-25 05:43:42 Warning: Warning (2): array_values() [<a href='http://php.net/function.array-values'>function.array-values</a>]: The argument should be an array in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 1970]
+2011-11-25 05:43:42 Warning: Warning (2): array_unique() [<a href='http://php.net/function.array-unique'>function.array-unique</a>]: The argument should be an array in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 2052]
+2011-11-25 05:43:42 Warning: Warning (2): array_unique() [<a href='http://php.net/function.array-unique'>function.array-unique</a>]: The argument should be an array in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 1244]
+2011-11-25 05:43:42 Warning: Warning (2): mysql_real_escape_string() expects parameter 2 to be resource, boolean given in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 671]
+2011-11-25 05:43:42 Warning: Warning (2): implode() [<a href='http://php.net/function.implode'>function.implode</a>]: Invalid arguments passed in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 1463]
+2011-11-25 05:43:42 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at E:\wamp\www\website\discoverycast\cake\libs\debugger.php:673) in [E:\wamp\www\website\discoverycast\cake\libs\controller\controller.php, line 742]
+2011-11-25 05:43:44 Warning: Warning (2): mysql_connect() [<a href='http://php.net/function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on 'testdiscoverycastcom.ipagemysql.com' (10061) in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 552]
+2011-11-25 05:43:44 Warning: Warning (2): mysql_select_db(): supplied argument is not a valid MySQL-Link resource in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 558]
+2011-11-25 05:43:44 Warning: Warning (2): mysql_query(): supplied argument is not a valid MySQL-Link resource in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 600]
+2011-11-25 05:43:44 Warning: Warning (2): mysql_get_server_info(): supplied argument is not a valid MySQL-Link resource in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 566]
+2011-11-25 05:43:44 Warning: Warning (2): mysql_errno(): supplied argument is not a valid MySQL-Link resource in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 682]
+2011-11-25 05:43:44 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo\dbo_mysql.php, line 127]
+2011-11-25 05:43:44 Warning: Warning (2): array_keys() [<a href='http://php.net/function.array-keys'>function.array-keys</a>]: The first argument should be an array in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 1953]
+2011-11-25 05:43:44 Warning: Warning (2): array_keys() [<a href='http://php.net/function.array-keys'>function.array-keys</a>]: The first argument should be an array in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 1966]
+2011-11-25 05:43:44 Warning: Warning (2): array_filter() [<a href='http://php.net/function.array-filter'>function.array-filter</a>]: The first argument should be an array in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 1970]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:18 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:22 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:26 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:30 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:35 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:39 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:45 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 04:58:51 Warning: Warning (2): in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument in [E:\wamp\www\website\discoverycast\app\plugins\acl\controllers\components\acl_generate.php, line 94]
+2011-11-27 15:27:39 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Array' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-11-27 15:32:20 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Array' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-11-27 15:37:44 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Array' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-11-27 15:41:27 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'validate' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-11-29 18:51:01 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'role.name' in 'order clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-11-29 18:51:01 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\app\views\users\admin_index.ctp, line 23]
+2011-11-29 18:51:01 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'role.name' in 'order clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-11-29 18:51:01 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\app\views\users\admin_index.ctp, line 23]
+2011-12-03 12:22:10 Warning: Warning (512): Method HtmlHelper::img does not exist in [E:\wamp\www\website\discoverycast\cake\libs\view\helper.php, line 154]
+2011-12-03 15:38:16 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Array' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-03 15:38:43 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Array' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-03 15:43:29 Warning: Warning (2): unlink(E:\wamp\www\website\discoverycast\app\webroot\img\avatar/avatar.jpg) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [E:\wamp\www\website\discoverycast\app\controllers\avatars_controller.php, line 143]
+2011-12-03 15:43:35 Warning: Warning (2): unlink(E:\wamp\www\website\discoverycast\app\webroot\img\avatar/avatar.jpg) [<a href='http://php.net/function.unlink'>function.unlink</a>]: No such file or directory in [E:\wamp\www\website\discoverycast\app\controllers\avatars_controller.php, line 143]
+2011-12-04 05:55:48 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 4
+            [role_id] => 2
+            [username] => khushwantsingharya
+            [name] => khushwant singh
+            [email] => khushwantnew@gmail.com
+            [website] => 
+            [activation_key] => 041d836a930337aeeaa0543d38ccf3cf
+            [image] => 
+            [bio] => 
+            [timezone] => 0
+            [status] => 1
+            [updated] => 2011-11-29 16:13:25
+            [created] => 2011-11-29 16:13:25
+        )
+
+)
+
+Aco: controllers/Home/help in [E:\wamp\www\website\discoverycast\cake\libs\controller\components\acl.php, line 273]
+2011-12-04 05:55:55 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 4
+            [role_id] => 2
+            [username] => khushwantsingharya
+            [name] => khushwant singh
+            [email] => khushwantnew@gmail.com
+            [website] => 
+            [activation_key] => 041d836a930337aeeaa0543d38ccf3cf
+            [image] => 
+            [bio] => 
+            [timezone] => 0
+            [status] => 1
+            [updated] => 2011-11-29 16:13:25
+            [created] => 2011-11-29 16:13:25
+        )
+
+)
+
+Aco: controllers/Questions/view_idea in [E:\wamp\www\website\discoverycast\cake\libs\controller\components\acl.php, line 273]
+2011-12-04 06:24:34 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 4
+            [role_id] => 2
+            [username] => khushwantsingharya
+            [name] => khushwant singh
+            [email] => khushwantnew@gmail.com
+            [website] => 
+            [activation_key] => 041d836a930337aeeaa0543d38ccf3cf
+            [image] => 
+            [bio] => 
+            [timezone] => 0
+            [status] => 1
+            [updated] => 2011-11-29 16:13:25
+            [created] => 2011-11-29 16:13:25
+        )
+
+)
+
+Aco: controllers/Home/admin in [E:\wamp\www\website\discoverycast\cake\libs\controller\components\acl.php, line 273]
+2011-12-10 12:35:49 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.ideas' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-10 12:36:12 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.ideas' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-10 12:37:12 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.ideas' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-10 12:39:15 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.ideas' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-10 12:51:20 Warning: Warning (4096): Object of class QuestionsController could not be converted to string in [E:\wamp\www\website\discoverycast\app\controllers\questions_controller.php, line 210]
+2011-12-10 13:27:08 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 4
+            [role_id] => 2
+            [username] => khushwantsingharya
+            [name] => khushwant singh
+            [email] => khushwantnew@gmail.com
+            [website] => 
+            [activation_key] => 041d836a930337aeeaa0543d38ccf3cf
+            [image] => 
+            [bio] => 
+            [timezone] => 0
+            [status] => 1
+            [updated] => 2011-11-29 16:13:25
+            [created] => 2011-11-29 16:13:25
+        )
+
+)
+
+Aco: controllers/Questions/build_idea in [E:\wamp\www\website\discoverycast\cake\libs\controller\components\acl.php, line 273]
+2011-12-10 13:33:22 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 4
+            [role_id] => 2
+            [username] => khushwantsingharya
+            [name] => khushwant singh
+            [email] => khushwantnew@gmail.com
+            [website] => 
+            [activation_key] => 041d836a930337aeeaa0543d38ccf3cf
+            [image] => 
+            [bio] => 
+            [timezone] => 0
+            [status] => 1
+            [updated] => 2011-11-29 16:13:25
+            [created] => 2011-11-29 16:13:25
+        )
+
+)
+
+Aco: controllers/Questions/build_ideaa in [E:\wamp\www\website\discoverycast\cake\libs\controller\components\acl.php, line 273]
+2011-12-10 15:01:35 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.status' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-10 15:01:35 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 1098]
+2011-12-10 18:19:19 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\app\views\helpers\ideatree.php, line 20]
+2011-12-10 18:22:02 Warning: Warning (2): Missing argument 5 for IdeatreeHelper::list_element(), called in E:\wamp\www\website\discoverycast\app\views\helpers\ideatree.php on line 26 and defined in [E:\wamp\www\website\discoverycast\app\views\helpers\ideatree.php, line 14]
+2011-12-10 20:07:31 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Question.question_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-10 20:07:31 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\app\views\helpers\ideatree.php, line 29]
+2011-12-10 20:07:46 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Question.question_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-10 20:07:46 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\app\views\helpers\ideatree.php, line 29]
+2011-12-10 20:09:44 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Question.question_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-10 20:15:34 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Question.question_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-10 20:16:41 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Question.question_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-11 15:36:26 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'UsersBigIdea.user_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-11 15:39:51 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'UsersFavoiteIde0a.id' in 'on clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-11 15:39:51 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\model.php, line 2334]
+2011-12-14 19:28:06 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Users.id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-14 19:36:20 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.user_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-14 19:36:21 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.user_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-15 19:08:35 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 4
+            [role_id] => 2
+            [avatar_id] => 2
+            [points] => 400
+            [unique_id] => 
+            [username] => khushwantsingharya
+            [name] => khushwant singh
+            [email] => khushwantnew@gmail.com
+            [website] => 
+            [activation_key] => 041d836a930337aeeaa0543d38ccf3cf
+            [image] => 
+            [bio] => 
+            [timezone] => 0
+            [email_alerts] => 0
+            [status] => 1
+            [updated] => 2011-11-29 16:13:25
+            [created] => 2011-11-29 16:13:25
+        )
+
+)
+
+Aco: controllers/Users/profile in [E:\wamp\www\website\discoverycast\cake\libs\controller\components\acl.php, line 273]
+2011-12-16 02:29:50 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'UsersFavoriteIdea.user_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-16 02:33:30 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'UsersFavoriteIdea.user_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-17 19:34:01 Warning: Warning (512): Controller::paginate() - can't find model all in controller QuestionsController in [E:\wamp\www\website\discoverycast\cake\libs\controller\controller.php, line 1102]
+2011-12-17 19:34:02 Warning: Warning (512): Controller::paginate() - can't find model all in controller QuestionsController in [E:\wamp\www\website\discoverycast\cake\libs\controller\controller.php, line 1102]
+2011-12-17 19:34:02 Warning: Warning (512): Controller::paginate() - can't find model all in controller QuestionsController in [E:\wamp\www\website\discoverycast\cake\libs\controller\controller.php, line 1102]
+2011-12-17 19:34:03 Warning: Warning (512): Controller::paginate() - can't find model all in controller QuestionsController in [E:\wamp\www\website\discoverycast\cake\libs\controller\controller.php, line 1102]
+2011-12-17 19:34:03 Warning: Warning (512): Controller::paginate() - can't find model all in controller QuestionsController in [E:\wamp\www\website\discoverycast\cake\libs\controller\controller.php, line 1102]
+2011-12-17 19:34:03 Warning: Warning (512): Controller::paginate() - can't find model all in controller QuestionsController in [E:\wamp\www\website\discoverycast\cake\libs\controller\controller.php, line 1102]
+2011-12-17 19:34:03 Warning: Warning (512): Controller::paginate() - can't find model all in controller QuestionsController in [E:\wamp\www\website\discoverycast\cake\libs\controller\controller.php, line 1102]
+2011-12-17 19:34:03 Warning: Warning (512): Controller::paginate() - can't find model all in controller QuestionsController in [E:\wamp\www\website\discoverycast\cake\libs\controller\controller.php, line 1102]
+2011-12-17 19:34:04 Warning: Warning (512): Controller::paginate() - can't find model all in controller QuestionsController in [E:\wamp\www\website\discoverycast\cake\libs\controller\controller.php, line 1102]
+2011-12-17 19:46:26 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\model.php, line 574]
+2011-12-17 19:46:51 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\model.php, line 574]
+2011-12-17 19:50:48 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\model.php, line 574]
+2011-12-17 19:51:02 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\model.php, line 574]
+2011-12-17 19:51:33 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\model.php, line 574]
+2011-12-18 03:53:25 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'UsersFavoriteIdea.question_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-18 03:53:26 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'UsersFavoriteIdea.question_id' in 'where clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-18 09:31:54 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.id' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-18 09:31:55 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.id' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-18 09:32:45 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1051: Unknown table 'Idea'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-18 09:32:45 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1051: Unknown table 'Idea'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-18 09:33:35 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.id' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-18 09:33:35 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.id' in 'field list'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-18 09:34:36 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\model.php, line 574]
+2011-12-18 09:34:37 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\model.php, line 574]
+2011-12-18 09:35:19 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\model.php, line 574]
+2011-12-18 09:35:20 Warning: Warning (2): Invalid argument supplied for foreach() in [E:\wamp\www\website\discoverycast\cake\libs\model\model.php, line 574]
+2011-12-18 09:43:53 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.created' in 'order clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-18 09:43:55 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'Idea.created' in 'order clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-18 09:45:51 Warning: Warning (512): AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => User
+    [Aro0.foreign_key] => 
+)
+" in [E:\wamp\www\website\discoverycast\cake\libs\model\db_acl.php, line 191]
+2011-12-18 11:06:53 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'IdeasTag.isd' in 'on clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]
+2011-12-18 11:06:54 Warning: Warning (512): <span style="color:Red;text-align:left"><b>SQL Error:</b> 1054: Unknown column 'IdeasTag.isd' in 'on clause'</span> in [E:\wamp\www\website\discoverycast\cake\libs\model\datasources\dbo_source.php, line 684]

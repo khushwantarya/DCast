@@ -1,0 +1,1 @@
+<?php echo $ideatree->show('Idea/idea/id', $data_array[0]["Idea"]); ?> 

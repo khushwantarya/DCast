@@ -1,0 +1,12 @@
+name: pokus
+description: téma v alfa verzii
+screenshot: screenshot.png
+
+author: Andrej Pavelka
+authorEmail: pavelka.andrej@gmail.com
+
+menus:
+  - main
+
+regions:
+  - right
