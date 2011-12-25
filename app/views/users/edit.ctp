@@ -84,7 +84,8 @@
 <script language="javascript" type="text/javascript">
 $(document).ready(function (){
 	
-	$("#submit").click(function(){
+	$("#submit").click(function(e){
+		e.preventDefault();
 		//validate unique_id
 		if($("#unique_id").val() == "")
 		{
@@ -93,36 +94,51 @@ $(document).ready(function (){
 			return false;
 		}
 		
-		if($("#password").length < 5)
-		{
-			alert("Password length must be equal to 5.");
-			$("#password").focus();
-			return false;
-		}
 		
-		if($("#password").val() != $("#confirm_password").val())
+		if($("#password").val() != "" && $("#confirm_password").val() != "")
 		{
-			alert("Password and Confirm Password must be identical.");
-			$("#password").val("");
-			$("#confirm_password").val("");			
-			$("#password").focus();
-			return false;
+			if($("#password").val().length < 5)
+			{
+				alert("Password length must be equal to 5.");
+				$("#password").focus();
+				return false;
+			}
+			
+			if($("#password").val() != $("#confirm_password").val())
+			{
+				alert("Password and Confirm Password must be identical.");
+				$("#password").val("");
+				$("#confirm_password").val("");			
+				$("#password").focus();
+				return false;
+			}
 		}
+		var unique_id = $("#unique_id").val();
+		var password = $("#password").val();
+		var confirm_password = $("#confirm_password").val();
+		var avatar_id = $("input[name='avatar_id']:checked").val();
+		var email_alerts = $("input[name='email_alerts']:checked").val();		
 		
+		//alert(avatar_id);
 		//send ajax request to update the profile 
 		$.ajax({
 			type: "POST",
 			url: "<?php echo $this->Html->url(array("controller" => "users","action" => "edit"));?>",
-			data: "unique_id=" + unique_id + "&password=" + password + "&confirm_password=" + confirm_password + "&email_alerts=" + $("#email_alerts").val() + "&avatar_id=" + $("#avatar_id").val(),
+			data: "unique_id=" + unique_id + "&password=" + password + "&confirm_password=" + confirm_password + "&email_alerts=" + email_alerts + "&avatar_id=" + avatar_id,
 			success: function(data){
-				//alert(data);
-				$(thisobj).html(data);
-				$(thisobj).removeClass("favorite_idea");
-				//actions();
+				var data_array = $.parseJSON(data);
+				if(data_array.type == "error")
+				{
+					alert(data_array.msg);
+				}
+				else
+				{
+					alert(data_array.msg);
+				}
+				$("#cboxClose", parent.document).trigger("click");
+				$("#cboxClose").trigger("click");
 			}
 		});
-		
-		alert("clicked");
 	});
 
 });

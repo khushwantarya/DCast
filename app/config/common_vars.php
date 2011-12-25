@@ -22,13 +22,16 @@
 	
 	//characters count	
 	Configure::write('CV.chars_count', 250);
+	Configure::write('CV.notes_chars_count', 500);	
 	
 	//constants for the default idea type text like agree, disagree, modify, question and tag
 	Configure::write('CV.agree_default_text', 'I agreee with this...');	
 	Configure::write('CV.disagree_default_text', 'I disagreee with this...');	
 	Configure::write('CV.modify_default_text', 'I see this differently...');	
 	Configure::write('CV.question_default_text', 'I have the following question...');	
-	Configure::write('CV.tag_default_text', 'Enter keyword(s) separated by commas to tag ideas.');				
+	Configure::write('CV.tag_default_text', 'Enter keyword(s) separated by commas to tag ideas.');
+	Configure::write('CV.note_default_text', 'Add you own text, They are saved privately to your Profile.');	
+					
 	
 	Configure::write('CV.your_idea_gets_favorited', 'your_idea_gets_favorited');	
 	Configure::write('CV.someone_builds_on_your_idea', 'someone_builds_on_your_idea');	
@@ -52,7 +55,11 @@
 		Configure::read('CV.your_idea_marked_as_big') => array("value" => 1000, "title" => "Your idea is marked as \"BIG\" by a moderator"),
 		Configure::read('CV.your_idea_marked_as_favortie_20_times') => array("value" => 1000, "title" => "Your idea is marked favorite 20 times by others (Top Idea)"),												
 	);
+	Configure::write('CV.scoring_rule_array', $scoring_rule_array);
 	
+	
+	$tag_cloud_colors_array = array(0 => "#ff000", 1 => "#ff000", 2 => "#ff4455", 3 => "#ffddee", 4 => "#55ddff", 5 => "#2233ff", 6 => "#ddff22", 7 => "#d3d3d3", 8 => "#ff4433",  9 => "#fedca4",  10 => "#123456");
+	Configure::write('CV.tag_cloud_colors_array', $tag_cloud_colors_array);
 	/*50  Your idea gets favorited
 	50  Someone builds on your idea
 	50  You select an avatar

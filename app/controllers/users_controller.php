@@ -599,11 +599,71 @@ class UsersController extends AppController {
 			
 			//get the logged in user detail
 			$user_array = $this->User->find("first", array("conditions" => array("User.id" => $this->Session->read('Auth.User.id'))));
-			
-			
 			$this->set("avatars_array", $avatars_array);
 			$this->set("user_array", $user_array);
 			$this->layout = "blank";
+			
+			if($_POST)
+			{
+				$user_data = array();
+				//save the data to the user table 
+				//check if the user already added his unique_id already if it is not already added then add 50 points when adding the unique_id first time
+				$scoring_rule_array = Configure::read('CV.scoring_rule_array');
+				$added_points = $user_array["User"]["points"];
+
+				if(!$user_array["User"]["unique_id"])
+				{
+					$added_points += $scoring_rule_array[Configure::read('CV.you_select_an_unique_id')]["value"];
+				}
+				
+				//check if the user already have his avatar if it is added first time then add 50 points when adding the avatar first time
+				if($user_array["User"]["avatar_id"] == 0)
+				{
+					$added_points += $scoring_rule_array[Configure::read('CV.you_select_an_avatar')]["value"];
+				}	
+				$user_data["User"]["points"] = $added_points;
+							
+				//add 50 points to the user account when he was adding unique_id first time
+				$this->User->id = $this->Session->read('Auth.User.id');
+				
+				//check if the id is unique for this record
+				
+				$return_msg = "";
+				if($_POST["unique_id"] != "")
+				{
+					$is_already = $this->User->field("id", array("User.unique_id" => $_POST["unique_id"], "User.id != " => $this->Session->read('Auth.User.id')));
+					$user_data["User"]["unique_id"] = $_POST["unique_id"];
+					if($is_already)
+					{
+						echo json_encode(array("type" => "error", "msg" => "Enter Username is already taken by other User."));exit;
+					}
+				}
+				if($_POST["password"] != "")
+				{
+					$user_data["User"]["password"] = $_POST["password"];
+				}
+				
+				$user_data["User"]["email_alerts"] = $_POST["email_alerts"];
+
+				if($_POST["avatar_id"] != "")
+				{
+					$user_data["User"]["avatar_id"] = $_POST["avatar_id"];
+				}
+				$user_data["User"]["status"] = 1;
+				
+				
+
+				
+				
+				if($this->User->save($user_data, false))
+				{
+				  echo json_encode(array("type" => "success", "msg" => "Your detail is updated successfully."));exit;
+				}
+				else
+				{
+				  echo json_encode(array("type" => "error", "msg" => "there is an error while updating your detail."));exit;
+				}
+			}
 		}
 
     public function forgot() {

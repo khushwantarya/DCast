@@ -48,7 +48,7 @@ if(isset($event_id))
 		echo $scripts_for_layout;
 ?>
 </head>
-<body>
+<body style="background: #ffffff;">
 		<?php $this->Layout->sessionFlash(); ?>
 		<?php  echo $content_for_layout; ?>
 	<script language="javascript" type="text/javascript">

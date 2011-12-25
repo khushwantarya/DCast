@@ -78,7 +78,7 @@
  */
 class DATABASE_CONFIG {
 
-	var $default = array(
+	/*var $default = array(
 		'driver' => 'mysql',
 		'persistent' => false,
 		'host' => 'testdiscoverycastcom.ipagemysql.com',
@@ -88,9 +88,9 @@ class DATABASE_CONFIG {
 		'prefix' => '',
 		'encoding' => 'UTF8',
 		'port' => '',
-	);
+	);*/
 
-	/*var $default = array(
+	var $default = array(
 		'driver' => 'mysql',
 		'persistent' => false,
 		'host' => 'localhost',
@@ -100,7 +100,7 @@ class DATABASE_CONFIG {
 		'prefix' => '',
 		'encoding' => 'UTF8',
 		'port' => '',
-	);*/
+	);
 	
 	var $test = array(
 		'driver' => 'mysql',

@@ -26,7 +26,7 @@ class AvatarsController extends AppController {
  * @access public
  */
     public $uses = array('Avatar');
-	public $image_dest = "";
+		public $image_dest = "";
 	
     public function beforeFilter() {
 		parent::beforeFilter();

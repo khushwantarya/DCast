@@ -160,7 +160,7 @@ function mouseover_actions()
 
 function open_color_box()
 {
-	$(".build_idea").colorbox({iframe:true, width:"750px", height:"550px;"});
+	$(".build_idea").colorbox({iframe:true, width:"750px", height:"490px;"});
 	$(".view_profile").colorbox({iframe:true, width:"750px", height:"550px;"});
 }
 

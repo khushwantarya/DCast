@@ -25,7 +25,7 @@ class User extends AppModel {
  * @var string
  * @access public
  */
-    public $order = 'name ASC';
+    //public $order = 'name ASC';
 /**
  * Behaviors used by the Model
  *
@@ -42,7 +42,7 @@ class User extends AppModel {
  * @access public
  */
     public $belongsTo = array('Role', "Avatar");
-    public $hasMany = array('Idea');		
+    //public $hasMany = array('Idea');		
 		
 /**
  * Validation

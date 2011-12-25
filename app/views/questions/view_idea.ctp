@@ -97,72 +97,93 @@
 		</div>
 	</div>
 	<div id="tabs-3">
-		<div class="box">
-			<div id="tab3">
+		<div class="adminbox">
+			<div class="box">
 				<div class="leftside" id="leftside">
-					<div id="Div4">
-						<div id="wordbox" class="tagbox"> 
-						<a href="javascript:wordSelect('(financial:1')" style="font-weight: normal; font-size: 12px; color: rgb(17, 106, 174);">(financial</a> 
-						<a href="javascript:wordSelect('acepto:2')" style="font-weight: normal; font-size: 12px; color: rgb(0, 0, 0);">acepto</a> 
-						<a href="javascript:wordSelect('alpiste:2')" style="font-weight: normal; font-size: 12px; color: rgb(233, 0, 0);">alpiste</a> 
-						<a href="javascript:wordSelect('amarillo:3')" style="font-weight: normal; font-size: 12px; color: rgb(45, 106, 0);">amarillo</a> 
-						<a href="javascript:wordSelect('approach:2')" style="font-weight: normal; font-size: 12px; color: rgb(202, 140, 33);">approach</a>
-						 </div>
+					<div>
+						<?php
+							$tag_colors_array = Configure::read('CV.tag_cloud_colors_array');
+							// Initite the basic object
+							$wordCloud->wordsArray = array();
+							$wordCloud->wordCloud();
+							foreach($cloud_array as $k => $v)
+							{
+								if($v > 0)
+								{
+									$wordCloud->addWord(array('word' => $k, 'size' => $v, 'url' => Router::url("/questions/side_list/" . $k)));
+								}
+							}
+							$myCloud = $wordCloud->showCloud('array');
+							
+							foreach ($myCloud as $cloudArray) {
+								echo ' &nbsp; <a href="'.$cloudArray['url'].'" style="color: '.$tag_colors_array[$cloudArray['range']].';" class="clouds size'.$cloudArray['range'].'">'.$cloudArray['word'].'</a> &nbsp;';
+							}	
+						?>
 					</div>
 				</div>
 				<div class="rightside">
 					<div>
-						<input name="ctl00$main$searchHidden" id="ctl00_main_searchHidden" type="hidden">
-						<div>
-							<div class="box2">
-								<div class="">Click on a word to view related ideas here</div>
+						<div class="ideaskeywordbox">
+							<div class="box2" id="cloud_idea_container">
+								<div class="emptybox">Click on a word to view related ideas here</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div style="clear:both;"></div>
-				If Word Cloud does not appear, <a href="http://www.microsoft.com/silverlight/get-started/install/default.aspx" target="_blank">install Microsoft Silverlight</a>. </div>
+			</div>
 		</div>
 	</div>
 	<div id="tabs-4">
 		<div class="adminbox">
-			<div aria-hidden="true" role="status" id="ctl00_main_UpdateProgress2" style="display:none;">
-				<div style="position:absolute; top:160px; left:300px; z-index:10;"> <img src="images/ajax-loader.gif" alt="Refreshing"> </div>
-			</div>
 			<div class="box">
-				<div id="Div1">
-					<div class="leftside" id="Div2">
-						<div id="Div3">
-							<div id="tagContainer" class="tagbox"> <a href="javascript:expertTagSelect('first')" style="font-weight: normal; font-size: 18px; color: rgb(17, 106, 174);">first</a> <a href="javascript:expertTagSelect('second')" style="font-weight: normal; font-size: 18px; color: rgb(0, 0, 0);">second</a> <a href="javascript:expertTagSelect('tag')" style="font-weight: normal; font-size: 18px; color: rgb(233, 0, 0);">tag</a> <a href="javascript:expertTagSelect('this%20is%20keyword')" style="font-weight: normal; font-size: 24px; color: rgb(45, 106, 0);">this is keyword</a> <a href="javascript:expertTagSelect('this%20is%20my%20tag')" style="font-weight: normal; font-size: 24px; color: rgb(202, 140, 33);">this is my tag</a> </div>
-						</div>
+				<div class="leftside">
+					<div>
+						<?php
+							$tag_colors_array = Configure::read('CV.tag_cloud_colors_array');
+							// Initite the basic object
+							$wordCloud->wordsArray = array();
+							$wordCloud->wordCloud();
+							foreach($tags_array as $k => $v)
+							{
+								$wordCloud->addWord(array('word' => $v["Tag"]["name"], 'size' => $v[0]["weight"], 'url' => Router::url("/questions/side_list/" . $v["Tag"]["id"])));
+							}
+							$myTags = $wordCloud->showCloud('array');
+							
+							foreach ($myTags as $cloudArray) {
+								echo ' &nbsp; <a href="'.$cloudArray['url'].'" style="color: '.$tag_colors_array[$cloudArray['range']].';" class="tags size'.$cloudArray['range'].'">'.$cloudArray['word'].'</a> &nbsp;';
+							}	
+						?>
 					</div>
-					<div class="rightside">
-						<div id="ctl00_main_PanelExpertWc">
-							<input name="ctl00$main$expertHidden" id="ctl00_main_expertHidden" type="hidden">
-							<div class="ideaskeywordbox">
-								<div class="box2">
-									<div class="emptybox">Click on a word to view related ideas here</div>
-								</div>
+				</div>
+				<div class="rightside">
+					<div>
+						<div class="ideaskeywordbox">
+							<div class="box2" id="tag_idea_container">
+								<div class="emptybox">Click on a word to view related ideas here</div>
 							</div>
 						</div>
 					</div>
-					<div style="clear:both;"></div>
 				</div>
+				<div style="clear:both;"></div>
 			</div>
 		</div>
 	</div>
 	<div id="tabs-5">
 		<div class="box" style="background: #FFF;">
-			<div style="text-align:center; padding-left:10px; padding-top:10px;"> <img src="images/ideamap.png" alt="Expand and Zoom"> </div>
-			<div style="clear:both;"></div>
-			<table>
+			<table width="100%">
 				<tbody>
 					<tr>
-						<td style="width: 500px;"><ul style="margin-top:2px;">
-								<li>Idea Map requires <a href="http://www.microsoft.com/silverlight/get-started/install/default.aspx" target="_blank">Microsoft Silverlight</a></li>
-								<li>Idea Map updates every minute. Check back often to see how it grows.</li>
-							</ul></td>
-						<td style="width: 120px;"><div style="text-align:center;"> <a href="http://app.discoverycast.com/IdeaMap.aspx" target="_blank"><img src="images/ideamap.jpg" onmouseover="this.src='images/ideamap_on.jpg';" onmouseout="this.src='images/ideamap.jpg';" alt="Start Idea Map"></a> </div></td>
+						<td style="width: 100%;">
+						
+							<div id="center-container">
+									<div id="infovis"></div>    
+							</div>
+							<div id="right-container">
+								<div id="inner-details"></div>
+							</div>
+							<div id="log"></div>
+						</td>
 					</tr>
 					<tr> </tr>
 				</tbody>
@@ -172,10 +193,89 @@
 </div>
 <?php echo $this->Js->writeBuffer(); ?>
 <script language="javascript" type="text/javascript">
+json = $.parseJSON('<?php echo $idea_map_array; ?>');
+
+function other_function()
+{
+	$(".favorite_idea").click(function(){
+		var thisobj = this;
+		//alert($(this).parent().attr("id"));
+		var idea_id_array = $(this).attr("id").split("<?php echo Configure::read("CV.fields_separator"); ?>");
+		var idea_id = idea_id_array[1];
+		var post_fix = "<?php echo Configure::read("CV.fields_separator"); ?>" + idea_id;
+		$.ajax({
+			type: "POST",
+			url: "<?php echo $this->Html->url(array("controller" => "questions","action" => "favorite_idea"));?>",
+			data: "idea_id=" + idea_id,
+			success: function(data){
+				//alert(data);
+				$(thisobj).html(data);
+				$(thisobj).removeClass("favorite_idea");
+				//mouseover_actions();
+				//actions();
+			}
+		});
+	});
+	$(".big_idea").click(function(){
+		var thisobj = this;
+		//alert($(this).parent().attr("id"));
+		var idea_id_array = $(this).parent().attr("id").split("<?php echo Configure::read("CV.fields_separator"); ?>");
+		var idea_id = idea_id_array[1];
+		var post_fix = "<?php echo Configure::read("CV.fields_separator"); ?>" + idea_id;
+		$.ajax({
+			type: "POST",
+			url: "<?php echo $this->Html->url(array("controller" => "questions","action" => "big_idea"));?>",
+			data: "idea_id=" + idea_id,
+			success: function(data){
+				//alert(data);
+				$(thisobj).html(data);
+
+				//mouseover_actions();
+				//actions();
+			}
+		});
+	});
+}
+
+
 $(document).ready(function (){
+
+	other_function();
+  rgraph_init();
 	open_color_box();
 	$("#tabs").tabs({ cookie: { expires: 30 } });
 	
+	
+	//get the  list of  the ideas for the  tags 
+	$(".tags").click(function (e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: $(this).attr("href"),
+			data: "list_for=tag",
+			success: function(data){
+				//alert(data);
+				$("#tag_idea_container").html(data);
+				other_function();
+				open_color_box();
+			}
+		});		
+	});
+	
+	//get the list of the ideas for the coulds entry 
+	$(".clouds").click(function (e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: $(this).attr("href"),
+			data: "list_for=idea",
+			success: function(data){
+				$("#cloud_idea_container").html(data);
+				other_function();
+				open_color_box();
+			}
+		});		
+	});	
 	
 	//ajax call for sorting the data of the livestream section
 	$("#live_stream_sort").change(function(){	
@@ -185,9 +285,6 @@ $(document).ready(function (){
 			data: "",
 			success: function(data){
 				$("#livestream_container").html(data);
-				//$(thisobj).html(data);
-				//$(thisobj).removeClass("favorite_idea");
-				//actions();
 			}
 		});
 	});
@@ -195,7 +292,7 @@ $(document).ready(function (){
 
 function open_color_box()
 {
-	$(".build_idea").colorbox({iframe:true, width:"750px", height:"550px;"});
+	$(".build_idea").colorbox({iframe:true, width:"750px", height:"490px;"});
 	$(".view_profile").colorbox({iframe:true, width:"750px", height:"550px;"});
 }
 </script>

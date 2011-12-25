@@ -26,7 +26,8 @@ class QuestionsController extends AppController {
  * @access public
  */
 	public $uses = array('Question', 'Event', 'Idea');
-	public $helpers = array('Ideatree', 'Js');
+	public $helpers = array('Ideatree', 'Js', 'wordCloud');
+	public $components = array('Rgraphdata');
 	public $event_id = "";
 	public function beforeFilter() {
 		parent::beforeFilter();	
@@ -193,17 +194,8 @@ class QuestionsController extends AppController {
 									)
 							)
 					)
-			);			
-			$this->Idea->bindModel(
-					array('belongsTo' => array(
-									'Question' => array(
-											'className' => 'Question',
-											'foreignKey' => 'question_id'
-									)
-							)
-					)
-			);
-			
+			);		
+
 			$this->Idea->bindModel(
 					array('belongsTo' => array(
 									'Question' => array(
@@ -254,7 +246,7 @@ class QuestionsController extends AppController {
 		if($this->RequestHandler->isAjax())
 		{
 			$ajax = "yes";	
-		}	
+		}
 		//pr($this->params["named"]);
 		
 		/* start for the livestream section */
@@ -321,26 +313,96 @@ class QuestionsController extends AppController {
 		/* start for the leaderboard section */		
 		
 		
+		
 		/* start for the word cloud section */
-		
-		
+			$word_cloud_array = $this->Idea->find("all", array("fields" => array("GROUP_CONCAT(CONCAT(idea, ' ')) as all_idea"), "conditions" => array("Idea.status" => 1)));
+			if($word_cloud_array)
+			{
+				$word_cloud_array = $word_cloud_array[0][0]["all_idea"];
+			}
+			$word_cloud_array = str_replace(",", "", $word_cloud_array);
+			$word_cloud_array = explode(" ", $word_cloud_array);
+			$cloud_array = array();
+			foreach($word_cloud_array as $k => $v)
+			{
+				if(strlen($v) > 2)
+				{
+					if(!in_array($v, array("is", "this", "a", "for", "if", "that", "those", "these", "them")))
+					{
+						if(isset($cloud_array[$v]))
+						{
+							$cloud_array[$v] += 1;
+						}
+						else
+						{
+							$cloud_array[$v] = 0;
+						}
+					}
+				}
+			}
+			/*echo "<pre>";
+			print_r($cloud_array);
+			echo "</pre>";*/
 		/* end for the word cloud section */		
 		
 		
 		/* start for the experts tag section */
+			//get the idea_ids for the event 
+			//$tags_ideas_array = $this->Idea->find("all", array("conditions" => array("Idea.event_id" => $this->event_id, "Idea.status" => 1)));
+			$this->loadModel("IdeasTag");
+			$this->IdeasTag->bindModel(
+					array('belongsTo' => array(
+									'Tag' => array(
+											'className' => 'Tag',
+											'foreignKey' => 'tag_id'
+									)
+							)
+					)
+			);
+			$this->IdeasTag->bindModel(
+					array('belongsTo' => array(
+									'Idea' => array(
+											'className' => 'Idea',
+											'foreignKey' => 'idea_id'
+									)
+							)
+					)
+			);
+			$tags_array = $this->IdeasTag->find("all", array("fields" => array("Tag.name", "count(Tag.id) as weight", "Tag.id"), "group" => array("Tag.name"), "conditions" => array("Idea.status" => 1, "Idea.event_id" => $this->event_id)));
+			//pr($tags_array);
+			
+		
 		/* end for the experts tag section */
 		
-		/* start for the Idea Map section */
 		
+		/* start for the Idea Map section */
+		$data_array = array("id" => "1212_1212", "name" => "Discovery Cast", "data" => "This is the visualization for the discovery cast idea data.");
+		$question_array = $this->Question->find("all", array("conditions" => array("Question.event_id" => $this->event_id)));
+
+		foreach($question_array as $k => $v)
+		{
+			$this->Idea->recursive = -1;
+			$idea_array = $this->Idea->find("threaded", array("fields" => array("Idea.idea as name", "Idea.idea as data", "Idea.id", "Idea.parent_id"), "conditions" => array("Idea.event_id" => $this->event_id, "Idea.question_id" => $v["Question"]["id"]), "order" => "Idea.id DESC"));
+			$data_array["children"][$k] = array("id" => $v["Question"]["id"], "name" => $v["Question"]["keyword"], "data" => array("relation" => $v["Question"]["title"]));
+			$data_array["children"][$k]["children"] = $this->Rgraphdata->set_data($idea_array);
+			//$data_array[$k]["Idea"] = $idea_array;
+		}
+		
+		$idea_map_array = json_encode($data_array);
 		/* start for the Idea Map section */
 		
 		$this->set("live_array", $live_array);
 		$this->set("user_array", $user_array);
+		$this->set("tags_array", $tags_array);
+		$this->set("cloud_array", $cloud_array);
+		$this->set("idea_map_array", $idea_map_array);
 			
 		$this->set("to_pass", $to_pass);
 		$this->set("ajax", $ajax);
 		$this->set("tab", $tab);
 	}
+	
+	
 	
 	public function admin()
 	{
@@ -436,6 +498,12 @@ class QuestionsController extends AppController {
 		{
 			$keyword = $_POST["keyword"];
 			$parent_id = 0;
+			$target = "";
+			if(isset($_POST["target"]) && ($_POST["target"] != ""))
+			{
+				$target = $_POST["target"];	
+			}		
+			
 			if(isset($_POST["parent_id"]) && ($_POST["parent_id"] != ""))
 			{
 				$parent_id = $_POST["parent_id"];
@@ -465,6 +533,61 @@ class QuestionsController extends AppController {
 			
 			$this->Idea->create();
 			$this->Idea->save($data, false);
+			
+			
+			//start to update the points of the user 
+				//get the  points earned before  by the user
+				/*$this->loadModel("User");
+				$user_array = $this->User->find("first", array("conditions" => array("User.id" => $this->Session->read('Auth.User.id'))));
+				
+				$added_points = $user_array["User"]["points"];
+
+				if(!$user_array["User"]["unique_id"])
+				{
+					$added_points += $scoring_rule_array[Configure::read('CV.you_select_an_unique_id')]["value"];
+				}
+				
+				//check if the user already have his avatar if it is added first time then add 50 points when adding the avatar first time
+				if($user_array["User"]["avatar_id"] == 0)
+				{
+					$added_points += $scoring_rule_array[Configure::read('CV.you_select_an_avatar')]["value"];
+				}	
+				$user_data["User"]["points"] = $added_points;
+							
+				//add 50 points to the user account when he was adding unique_id first time
+				$this->User->id = $this->Session->read('Auth.User.id');
+				
+				//check if the id is unique for this record
+				
+				$return_msg = "";
+				if($_POST["unique_id"] != "")
+				{
+					$is_already = $this->User->field("id", array("User.unique_id" => $_POST["unique_id"], "User.id != " => $this->Session->read('Auth.User.id')));
+					$user_data["User"]["unique_id"] = $_POST["unique_id"];
+					if($is_already)
+					{
+						echo json_encode(array("type" => "error", "msg" => "Enter Username is already taken by other User."));exit;
+					}
+				}
+				if($_POST["password"] != "")
+				{
+					$user_data["User"]["password"] = $_POST["password"];
+				}
+				
+				$user_data["User"]["email_alerts"] = $_POST["email_alerts"];
+
+				if($_POST["avatar_id"] != "")
+				{
+					$user_data["User"]["avatar_id"] = $_POST["avatar_id"];
+				}
+				$user_data["User"]["status"] = 1;
+				
+				
+
+				
+				
+				$this->User->save($user_data, false)*/
+			//end to updated the points of the usser 
 			
 			
 			$data_array = $this->Question->find("all", array("conditions" => array("Question.id" => $question_id)));
@@ -508,9 +631,20 @@ class QuestionsController extends AppController {
 							)
 					)
 			);
-			$idea_array = $this->Idea->find("threaded", array("conditions" => array("Idea.question_id" => $question_id, "Idea.id" => $this->Idea->id), "order" => "Idea.id DESC"));
-			$data_array[0]["Idea"] = $idea_array;
-			$this->set("data_array", $data_array);
+			
+			if($target == "")
+			{
+				$idea_array = $this->Idea->find("threaded", array("conditions" => array("Idea.question_id" => $question_id, "Idea.id" => $this->Idea->id), "order" => "Idea.id DESC"));
+				$data_array[0]["Idea"] = $idea_array;
+				$this->set("data_array", $data_array);
+			}
+			else
+			{
+				$data_array = $this->Idea->find("all", array("conditions" => array("Idea.question_id" => $question_id, "Idea.id" => $this->Idea->id), "order" => "Idea.id DESC"));
+				$this->set("data_array", $data_array);
+			}
+
+			$this->set("target", $target);
 			//$this->layout = "blank";
 		}
 	}
@@ -634,18 +768,224 @@ class QuestionsController extends AppController {
 		Uses	: This function is used to build on single idea, this will be a page to open with a single idea detail
 	*/
 	
-	public function build_idea()
+	public function build_idea($idea_id = NULL)
 	{
 		$this->layout = "blank";
+		
+		if($idea_id == NULL)
+		{
+			exit("There is no Idea to get detail.");
+		}
+		
+		$this->Idea->bindModel(
+				array('hasOne' => array(
+								'UsersBigIdea' => array(
+										'className' => 'UsersBigIdea',
+										'foreignKey' => 'idea_id',
+										'conditions' => array("UsersBigIdea.user_id" => $this->Session->read('Auth.User.id'))
+								)
+						)
+				)
+		);
+		$this->Idea->bindModel(
+				array('hasOne' => array(
+								'UsersFavoriteIdea' => array(
+										'className' => 'UsersFavoriteIdea',
+										'foreignKey' => 'idea_id',
+										'conditions' => array("UsersFavoriteIdea.user_id" => $this->Session->read('Auth.User.id'), "UsersFavoriteIdea.id !=" => NULL)
+								)
+						)
+				)
+		);	
+		$this->Idea->bindModel(
+				array('hasOne' => array(
+								'UserNote' => array(
+										'className' => 'UserNote',
+										'foreignKey' => 'idea_id',
+										'conditions' => array("UserNote.user_id" => $this->Session->read('Auth.User.id'))
+								)
+						)
+				)
+		);
+		//get the idea detail 
+		$idea_array = $this->Idea->find("first", array("conditions" => array("Idea.id" => $idea_id, "Idea.status" => 1)));
+		
+		$this->Idea->bindModel(
+				array('hasOne' => array(
+								'UsersBigIdea' => array(
+										'className' => 'UsersBigIdea',
+										'foreignKey' => 'idea_id',
+										'conditions' => array("UsersBigIdea.user_id" => $this->Session->read('Auth.User.id'))
+								)
+						)
+				)
+		);
+		$this->Idea->bindModel(
+				array('hasOne' => array(
+								'UsersFavoriteIdea' => array(
+										'className' => 'UsersFavoriteIdea',
+										'foreignKey' => 'idea_id',
+										'conditions' => array("UsersFavoriteIdea.user_id" => $this->Session->read('Auth.User.id'), "UsersFavoriteIdea.id !=" => NULL)
+								)
+						)
+				)
+		);		
+		$child_idea_array = $this->Idea->find("all", array("conditions" => array("Idea.parent_id" => $idea_id, "Idea.status" => 1)));
+		
+		
+		$parent_array = array();
+		if(!empty($idea_array))
+		{
+			// check for the parent idea if there is a prent idea of the current idea
+			$this->Idea->bindModel(
+					array('hasOne' => array(
+									'UsersBigIdea' => array(
+											'className' => 'UsersBigIdea',
+											'foreignKey' => 'idea_id',
+											'conditions' => array("UsersBigIdea.user_id" => $this->Session->read('Auth.User.id'))
+									)
+							)
+					)
+			);
+			$this->Idea->bindModel(
+					array('hasOne' => array(
+									'UsersFavoriteIdea' => array(
+											'className' => 'UsersFavoriteIdea',
+											'foreignKey' => 'idea_id',
+											'conditions' => array("UsersFavoriteIdea.user_id" => $this->Session->read('Auth.User.id'), "UsersFavoriteIdea.id !=" => NULL)
+									)
+							)
+					)
+			);			
+			$parent_array = $this->Idea->find("first", array("conditions" => array("Idea.id" => $idea_array["Idea"]["parent_id"], "Idea.status" => 1)));
+		}
+		
+		//pr($child_idea_array);
+		/*echo "Idea array";
+		pr($idea_array);
+		echo "Child array";
+		pr($child_idea_array);
+		echo "Parent array";
+		pr($parent_array);*/
+		
+		$this->set("idea_array", $idea_array);
+		$this->set("child_idea_array", $child_idea_array);
+		$this->set("parent_array", $parent_array);
+		//get the parent of the idea if there is a payment then need to show the  parent idea detail in the top right
+		
 	}
 	
-	
-	public function make_idea_favorite()
+	public function add_note()
 	{
+		$this->loadModel("Idea");
+		$this->loadModel("UserNote");
+		if($_POST)
+		{
+			$note = $_POST["note"];
+			$idea_id = $_POST["idea_id"];
+			
+			
+			$user_note_array = $this->UserNote->find("first", array("conditions" => array("UserNote.user_id" => $this->Session->read('Auth.User.id'), "UserNote.idea_id" => $idea_id)));
+
+			if($user_note_array)
+			{
+				$user_note_id = $user_note_array["UserNote"]["id"];
+				//update the note in the user_notes table
+				$this->UserNote->id = $user_note_id;
+				$data = array("UserNote" => array("note" => $note));
+				if($this->UserNote->save($data, false))
+				{
+					echo 1;
+				}
+				else
+				{
+					echo 0;
+				}
+			}
+			else
+			{	
+				//save the note in the user_notes table
+				$data = array("UserNote" => array("note" => $note, "idea_id" => $idea_id, "user_id" => $this->Session->read('Auth.User.id')));
+				$this->UserNote->create();
+				if($this->UserNote->save($data, false))
+				{
+					echo 1;
+				}
+				else
+				{
+					echo 0;
+				}
+			}
+			
+			exit;
+		}
+		exit;
 	}
 	
-	public function make_idea_big()
+	/*
+		This function is used to get the list for the wordcloud and expert tags
+	*/
+	public function side_list($term = NULL)
 	{
+		$this->loadModel("IdeasTag");
+		if($_POST && $term != NULL)
+		{
+			$list_for = $_POST["list_for"];
+			
+			//whe the list for is word then search the coming term in the idea and if it is tag then search the ideas by the tag_id
+			$this->Idea->bindModel(
+					array('hasOne' => array(
+									'UsersBigIdea' => array(
+											'className' => 'UsersBigIdea',
+											'foreignKey' => 'idea_id',
+											'conditions' => array("UsersBigIdea.user_id" => $this->Session->read('Auth.User.id'))
+									)
+							)
+					)
+			);
+			$this->Idea->bindModel(
+					array('hasOne' => array(
+									'UsersFavoriteIdea' => array(
+											'className' => 'UsersFavoriteIdea',
+											'foreignKey' => 'idea_id',
+											'conditions' => array("UsersFavoriteIdea.user_id" => $this->Session->read('Auth.User.id'), "UsersFavoriteIdea.id !=" => NULL)
+									)
+							)
+					)
+			);	
+			if($list_for == "idea")
+			{
+				$data_array = $this->Idea->find("all", array("conditions" => array("Idea.idea like " => "%" . $term . "%", "Idea.status" => 1)));
+			}
+			else if($list_for == "tag")
+			{
+				$this->Idea->bindModel(
+						array('hasOne' => array(
+										'IdeasTag' => array(
+												'className' => 'IdeasTag',
+												'foreignKey' => 'idea_id'
+										)
+								)
+						)
+				);	
+				$this->IdeasTag->recursive = 2;
+				$data_array = $this->Idea->find("all", array("conditions" => array("IdeasTag.tag_id" => $term, "Idea.status" => 1)));
+			}
+			else
+			{
+				$data_array = array();
+			}
+			/*echo "<pre>";
+			print_r($data_array);
+			echo "</pre>";*/
+			$this->set("data_array", $data_array);
+			
+		}
+		else
+		{
+			$this->set("data_array", $data_array);
+		}
+		//exit;
 	}
 	
 	

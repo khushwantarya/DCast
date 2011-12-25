@@ -195,7 +195,7 @@ class IdeatreeHelper extends AppHelper
 										</div>
 									</div>
 									<div class="idearight" style="position: relative;">' . 
-										$this->Html->link($val[$modelName][$fieldName], "/questions/build_idea/" . $val[$modelName][$id], array("title" => "Build on Idea", "class" => "build_idea hyperlink2 cboxElement")) . '
+										$this->Html->link($val[$modelName][$fieldName], "/questions/build_idea/" . $val[$modelName][$id], array("title" => "Build on Idea", "class" => "build_idea hyperlink2")) . '
 										<div class="submittedby"> 
 											' . $this->calc_duration($val[$modelName]["created"]) . '
 											by ' . $this->set_user_profile_link($val) . ' 

@@ -11,7 +11,7 @@ $app_event_data = array();
 if(isset($event_id))
 {
 	//echo $event_id;
-	$app_event_data = $this->requestAction('/events/get_event/' . $event_id);
+	//$app_event_data = $this->requestAction('/events/get_event/' . $event_id);
 }
  
 ?>
@@ -32,7 +32,8 @@ if(isset($event_id))
 				/*'js-tree','jquery',*/
 				'jquery-theme/jquery-custom',
 				'jquery.loadmask',
-				'colorbox'
+				'colorbox',
+				'wordcloud'
 				
 		));
 		echo $this->Layout->js();
@@ -43,7 +44,9 @@ if(isset($event_id))
 				'jquery/jquery.treeview',
 				'general-function',
 				'jquery/jquery.loadmask',
-				'jquery/jquery.colorbox'
+				'jquery/jquery.colorbox',
+				'visualization/jit',
+				'visualization/rgraph'
 		));
 		echo $scripts_for_layout;
 ?>
